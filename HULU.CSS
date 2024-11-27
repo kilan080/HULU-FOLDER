@@ -909,6 +909,9 @@ hr {
         text-align: center;
         font-size: x-small;
     }
+    .pict {
+        height: 150vh;
+    }
     
     .rugby {
         background-position: 0px -1rem;
