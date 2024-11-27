@@ -6,13 +6,19 @@
 body {
     padding: 0px;
     background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.up-now {
+    display: none;
 }
 .container1 {
     background-image: url(./images/hulu-background-image.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -113,7 +119,7 @@ body {
     align-items: center;
 }
 .disney1 h5 {
-    color: green;
+    color: #1CC471;
     font-size: 20px;
 }
 .disney1 img {
@@ -182,6 +188,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 150vh;
+    width: 100%;
     /* text-align: center; */
 }
 .container4 h5 {
@@ -235,6 +242,7 @@ body {
     justify-content: center;
     gap: 20px;
     color: #ffffff;
+    width: 100%;
 }
 .talks h5 {
     color: #1CC471;
@@ -293,6 +301,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
+    width: 100%;
     height: 120vh;
     display: flex;
     flex-direction: column;
@@ -334,8 +343,13 @@ body {
     padding-top: 12px;
     font-weight: 800;
 }
-.rugby p {
+.disclaim {
     max-width: 496px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.rugby p {
+    max-width: 450px;
     color: #ffffff;
     margin-top: 20px;
 }
@@ -360,12 +374,11 @@ body {
 }
 .link {
     color: #ffffff;
-    /* max-width: ; */
 }
 .container5 {
-    /* background-color: #000; */
     padding-top: 50px;
     background-color: #000;
+    width: 100%;
 }
 .A5 h1 {
     text-align: center;
@@ -427,7 +440,7 @@ body {
 }
 .duo-5 {
     display: flex;
-    gap: 60px;
+    /* gap: 60px; */
 }
 .duo button {
     width: 180px;
@@ -544,7 +557,7 @@ body {
     height: auto;
     color: #586174;
     background-color: #F1F2F4;
-    max-width: auto;
+    width: 100%;
 }
 .dem {
     display: flex;
@@ -713,7 +726,22 @@ hr {
 
 
 @media screen and  (max-width: 900px) {
-    
+    .up-now {
+        display: block;
+        width: 90%;
+        background-color: #1CC471;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        position: fixed;
+        bottom: 0;
+        border: none;
+        color: #fff;
+        font-size: medium;
+        padding: 15px;
+        border-radius: 7px;
+        z-index: 1;
+        /* position: sticky; */
+    }
     .rugby {
         background-image: url(./images/rugby.jpeg);
         align-items: center;
@@ -767,6 +795,7 @@ hr {
         letter-spacing: -.5px;
         line-height: 1.25;
         text-transform: none;
+        text-align: center;
     }
     .talks h4 {
         margin: 18px 10% 0;
@@ -779,7 +808,172 @@ hr {
         justify-content: space-around;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
+    .container1A {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+
+    }
+    .container1 {
+        height: fit-content;
+    }
+    .duo-5 {
+        display: flex;
+        flex-direction: column;
+    }
+    .disney1 h5 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .disney1 button {
+        width: 80%;
+    }
+    .disney1 img {
+        width: 80%
+    }
+    .container4 {
+        height: 220vh;
+    }
+    .container6 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 605px) {
+    
+    .talks {
+        padding-bottom: 19px;
+        height: 110vh;
+    }
+
+    .two {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .two1 {
+        width: 45%;
+    }
+    .two1 button {
+        width: 100%;
+    }
+    .container4 {
+        height: 140vh;
+    }
+    .rugby {
+        padding: 0;
+        height: 125vh;
+    }    
+}
+@media screen and (max-width: 445px) {
+}
+@media screen and (max-width: 414px) {
+    .disney1 h3 {
+        text-align: center;
+        font-size: 12px;
+        
+    }
+    .disney1 button {
+        color: #fff;
+    }
+    .up {
+       font-size: 14px;
+        padding-top: 5px;
+    }
+    .bund h5 {
+        color: #1CC471;
+        text-align: center;
+    }
+    .container3 {
+        box-shadow: none;
+    }
+    .container3 h5 {
+        max-width: 600px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .container6 {
+        padding: 15px 5px;
+    }
+    .talks h2 {
+        font-size: 37px;
+        text-align: center;
+        padding-bottom: 61px;
+    }
+    .talks button {
+        height: 30px;
+        width: 140px;
+    }
+    .talks p {
+        text-align: center;
+        font-size: x-small;
+    }
+    
+    .rugby {
+        background-position: 0px -1rem;
+    }
+    .tags {
+        width: 398px;
+        justify-content: center;
+    }
+    .bold {
+        font-size: 12px;
+        padding: 0;
+    }
+    .and {
+        font-size: 12px;
+    }
+    .rugby {
+        padding: 0;
+        height: 125vh;
+    }
+    .rugby h1 {
+        font-size: 25px;
+        padding: 24px 0px 0px 0px;
+    }
+    .disclaim {
+        width: 338px;
+    }
+    .rugby p {
+        width: 338px;
+        line-height: 1;
+    }
+    .tag-pic {
+        width: 85%;
+    }
+    .container5 {
+
+    }
+    .A5 h1 {
+        font-family: "Graphik Web", sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -0.2px;
+    }
+    .A5 p {
+        font-family: Graphik Web, Graphik, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 1.36;
+        text-transform: none;
+    }
+    .y1 {
+        border-radius: 0px; 
+    }
+    .A5 h5 {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    .two1 button {
+        width: 135px;
+        border-radius: 0px;
+    }
+}
+@media screen and (max-width: 390px) {
     .lov p {
         
         font-family: "Graphik Web", sans-serif;
@@ -788,4 +982,32 @@ hr {
         line-height: 1.36;
         letter-spacing: 0;
     }
+    .container4 {
+        height: 100vh;
+    }
+    .container6 {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .container4 {
+        height: 165vh;
+    }
+    .tag-pic {
+        gap: 5%;
+    }
+    .data {
+        width: 19%;
+    }
+    .container6 {
+        padding: 5px;
+    }
+    .rugby {
+        height: 100vh;
+        background-position: 0px -6rem;
+    }
+    .talks {
+        height: 110vh;
+    }
+
 }
